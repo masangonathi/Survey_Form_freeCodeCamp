@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">
+        Mahlala Code Academy Survey Form
+    </h1>
+    <p id="description">
+        Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name-label" id="name-label">Name<input type="text" id="name" required placeholder="put your name here" ></label>
+            <label for="email-label" id="email-label">Email<input type="email" id="email" required placeholder="email address"></label>
+            <label for="age">Age(optional)<input type="number" id="age" placeholder="Age" ></label>
+            <label for="number-label" id="number-label">Number<input type="number" id="number" min="8" max="20" placeholder="number"></label>
+        </fieldset>
+        <fieldset>
+            <label for="describe">Which option best describe your current role?<input type="text">
+            <select id="dropdown" name="referrer">
+                <option value="">(select current role)</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Unemployed</option>
+                <option value="4">Other</option>
+              </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend the Academy to a friend?</legend>
+        <label for="definitely"><input id="definitely" type="radio" name="account-type" class="inline" checked value="yes" /> Definitely </label>
+        <label for="not sure"><input id="not sure" type="radio" name="account-type" class="inline" value="no"/> Not sure </label>
+        </fieldset>
+        <fieldset>
+            <p> What would you like to see improve?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            <label for="">
+                <input type="checkbox" name="prefer" value="Front-end Projects"> Front-end Projects
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" value="Back-end Projects"> Back-end Projects
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" value="Challenges"> Challenges
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" value="Open Source Community"> Open Source Community
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" value="Gitter help rooms"> Gitter help rooms
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" value="Videos"> Videos
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" value="City Meetups"> City Meetups
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" value="Wiki"> Wiki
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" value="Forum"> Forum
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" value="Additional Courses"> Additional Courses
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="bio">Any comments or suggestions?<br>
+                <textarea id="suggest" name="suggest" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+              </label>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+
+
+    </form>
+</body>
+</html>
